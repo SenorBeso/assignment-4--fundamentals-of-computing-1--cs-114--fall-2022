@@ -1,18 +1,15 @@
 void drawCircle(){
-  circle(84,84,160);
+  circle(spot0x,spot0y,CIRCLERADIUS);
 
 }
 
 void drawBoard (){
   square(0,0,500);
-  int width = 500;
-  int height = 500;
 
-  line(width*.33,0,width*.33,height);
-  line((width*.33)*2,0,(width*.33)*2,height);
+  line(WIDTH*.33,0,WIDTH*.33,HEIGHT);
+  line((WIDTH*.33)*2,0,(HEIGHT*.33)*2,HEIGHT);
 
-  line(0,width*.33,height,width*.33);
-  line(0,(width*.33)*2,height,(width*.33)*2);
+  line(0,WIDTH*.33,HEIGHT,WIDTH*.33);
+  line(0,(WIDTH*.33)*2,HEIGHT,(WIDTH*.33)*2);
 
 }
-
