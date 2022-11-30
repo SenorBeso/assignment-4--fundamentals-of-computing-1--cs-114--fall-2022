@@ -4,7 +4,7 @@ void setup() {
   boardArray();
   //drawCircle();
   computerMove();
-  playerMove();
+  keyPressed0();
 
 }
 
