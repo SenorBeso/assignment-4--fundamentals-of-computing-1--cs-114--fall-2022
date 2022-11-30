@@ -1,6 +1,5 @@
 void drawCircle(){
   circle(spot0x,spot0y,CIRCLERADIUS);
-
 }
 
 void drawBoard (){

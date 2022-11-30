@@ -1,15 +1,9 @@
 import java.util.Random;
+import java.util.Scanner;
+
 
 void boardArray(){
   int[] board = new int[8];
-  for (int i = 0; i<9 ; i++){
-    board[i] = i;
-    System.out.println(board[i]);
-    
-  }
-  
-  
-  
 }
 
 void computerMove(){
@@ -18,4 +12,9 @@ void computerMove(){
    int randNum = rand.nextInt(9);
    while (randNum !=5);
    randNum = rand.nextInt(9);
+}
+
+void keyPressed0(){
+if (key == 0){
+  drawCircle();
 }
