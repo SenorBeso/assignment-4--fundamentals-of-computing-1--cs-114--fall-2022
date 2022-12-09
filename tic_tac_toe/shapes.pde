@@ -1,5 +1,6 @@
-void drawCircle(){
-  circle(spot0x,spot0y,CIRCLERADIUS);
+void drawCircle(int input){
+ circle(xSpots[input],ySpots[input],CIRCLERADIUS);
+ println(input);
 }
 
 void drawBoard (){
