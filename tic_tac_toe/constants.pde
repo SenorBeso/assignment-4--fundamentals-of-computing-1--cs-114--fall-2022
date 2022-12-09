@@ -7,26 +7,28 @@ final int COMPUTERMARKER = 1;
 final int PLAYERMARKER = 2;
 int[] board = new int[8];
 
-int[] xSpotsCircle = {((WIDTH/3)/2),
-  ((WIDTH/3)/2)*2,
-  ((WIDTH/3)/2)*3,
-  ((WIDTH/3)/2),
-  ((WIDTH/3)/2)*2,
-  ((WIDTH/3)/2)*3,
-  ((WIDTH/3)/2),
-  ((WIDTH/3)/2)*2,
-  ((WIDTH/3)/2)*3
+int[] xSpotsCircle = {
+  ((SPOTWIDTH)/2),
+  ((SPOTWIDTH)/2)*3,
+  ((SPOTWIDTH)/2)*5,
+  ((SPOTWIDTH)/2),
+  ((SPOTWIDTH)/2)*3,
+  ((SPOTWIDTH)/2)*5,
+  ((SPOTWIDTH)/2),
+  ((SPOTWIDTH)/2)*3,
+  ((SPOTWIDTH)/2)*5
 };
 
-int[] ySpotsCircle = {((HEIGHT/3)/2),
-  ((HEIGHT/3)/2),
-  ((HEIGHT/3)/2),
-  ((HEIGHT/3)/2),
-  ((HEIGHT/3)/2)*2,
-  ((HEIGHT/3)/2)*3,
-  ((HEIGHT/3)/2),
-  ((HEIGHT/3)/2)*2,
-  ((HEIGHT/3)/2)*3
+int[] ySpotsCircle = {
+  ((SPOTHEIGHT)/2),
+  ((SPOTHEIGHT)/2),
+  ((SPOTHEIGHT)/2),
+  ((SPOTHEIGHT)/2)*3,
+  ((SPOTHEIGHT)/2)*3,
+  ((SPOTHEIGHT)/2)*3,
+  ((SPOTHEIGHT)/2)*5,
+  ((SPOTHEIGHT)/2)*5,
+  ((SPOTHEIGHT)/2)*5
 };
 
 int[] xSpotsX = {
