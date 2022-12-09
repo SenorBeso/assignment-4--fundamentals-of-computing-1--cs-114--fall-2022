@@ -4,9 +4,6 @@ void setup() {
 
 
   computerMove();
-
-
-
 }
 
 void draw() {
