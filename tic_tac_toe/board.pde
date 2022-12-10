@@ -5,6 +5,7 @@ void computerMove(){
   move = int(random(8));
     drawX(move);
     board[move] = 1;
+    println("This is board at move" + move);
     moveCounter++;
     checkComputerWin();
     checkTie();
@@ -53,12 +54,11 @@ void computerMove(){
 // }
 
 void playerMove(){
-  if(key == '1' && board[0] == 0){
+  if(key == 5){
     drawCircle(key);
     board[0]=2;
   } else if (board[0] != 0){
     println("Invalid move");
   }
 }
-
 
