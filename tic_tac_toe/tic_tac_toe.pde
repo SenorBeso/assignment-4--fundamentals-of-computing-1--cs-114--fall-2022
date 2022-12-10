@@ -8,7 +8,7 @@ void setup() {
         computerMove();
       }
       if (checkTie() == false && checkComputerWin() == false && checkPlayerWin() == false){
-        playerMove(8);
+        playerMove(userInput(););
       }
     // }
 

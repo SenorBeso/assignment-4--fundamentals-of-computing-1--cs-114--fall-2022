@@ -11,6 +11,13 @@ void computerMove(){
     // checkTie();
 }
 
+
+public int userInput(){
+  keyPressed();
+  int userInput = key;
+  return userInput;
+}
+
 //  void keyPressed(){
 //   if(checkTie() == false && checkPlayerWin() == false && checkComputerWin() == false){
 //         playerMove();
@@ -57,6 +64,3 @@ void playerMove(int input){
   // } else {
   //   println("Game over");
   // }
-
-
-
