@@ -6,6 +6,9 @@ final int SPOTHEIGHT = HEIGHT/3;
 final int COMPUTERMARKER = 1;
 final int PLAYERMARKER = 2;
 int moveCounter = 0;
+////////////////
+final String VALIDINPUT = "012345678";
+/////////
 int[] board = new int[9];
 
 int[] xSpotsCircle = {

@@ -1,12 +1,10 @@
 void drawCircle(int input){
   circle(xSpotsCircle[input],ySpotsCircle[input],CIRCLERADIUS);
-  println(input);
 }
 
 void drawX (int input){
 line(xSpotsX[input], ySpotsX[input], xSpotsX[input]+SPOTWIDTH, ySpotsX[input]+SPOTHEIGHT);
 line(xSpotsX[input]+SPOTWIDTH, ySpotsX[input], xSpotsX[input], ySpotsX[input]+SPOTHEIGHT);
-println(input);
 }
 
 void drawBoard (){

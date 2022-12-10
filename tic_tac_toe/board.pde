@@ -1,23 +1,61 @@
+//-----------------------------------
+boolean playerMove = false;
+boolean validMove = false;
+boolean gameOver = false;
+//----------------------------
 void computerMove(){
-  int move = int(random(8));
+  if (!playerMove) {
+    int move = int(random(8));
 
-  while (board[move] != 0);
-  move = int(random(8));
-    drawX(move);
-    board[move] = 1;
-    println("This is board at move " + board[move]);
+    while (board[move] != 0){
+      move = int(random(8));
+    }
+
+      drawX(move);
+      board[move] = 1;
+      moveCounter++;
+
+      playerMove = true;
+      checkComputerWin();
+      checkTie();
+  }
+}
+
+
+
+void userMove(int input){
+  if (board[input] == 0){
+    drawCircle(input);
+    board[input] = 2;
     moveCounter++;
-    checkComputerWin();
-    // checkTie();
+    validMove = true;
+  }
 }
+//===================
+void keyPressed (){
+  String input = "" + key;
+  if (VALIDINPUT.indexOf(input) != -1) {
+      int userMove = Integer.parseInt(input);
+      userMove(userMove);
+  } else {
+      println("Invalid, enter another key");
+    }
 
+    if (validMove) {
+      validMove = false;
 
-public int userInput(){
-  keyPressed();
-  int userInput = key;
-  return userInput;
+      if (moveCounter > 5) {
+        checkPlayerWin();
+      }
+
+      if (!gameOver) {
+        playerMove = false;
+        computerMove();
+      }
+    }
+
 }
-
+//====================================
 //  void keyPressed(){
 //   if(checkTie() == false && checkPlayerWin() == false && checkComputerWin() == false){
 //         playerMove();
@@ -31,13 +69,13 @@ public int userInput(){
 //       println ("Game is still going");
 //  }
 
-void playerMove(int input){
-    if (board[input] == 0){
-    drawCircle(input);
-  board[key] = 2;
-    moveCounter++;
-    }
-}
+// void playerMove(int input){
+//     if (board[input] == 0){
+//     drawCircle(input);
+//   board[key] = 2;
+//     moveCounter++;
+//     }
+// }
 
 
 // void playerMove(){
