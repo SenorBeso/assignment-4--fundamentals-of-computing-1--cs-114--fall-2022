@@ -1,7 +1,7 @@
 //-----------------------------------
 boolean playerMove = false;
 boolean validMove = false;
-boolean gameOver = false;
+boolean gameOverCheck = false;
 //----------------------------
 
 void computerMove(){
@@ -51,7 +51,7 @@ void keyPressed (){
         checkPlayerWin();
       }
 
-      if (gameOver == false) {
+      if (gameOverCheck == false) {
         playerMove = false;
         computerMove();
       }
