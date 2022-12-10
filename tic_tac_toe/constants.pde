@@ -138,12 +138,12 @@ boolean checkPlayerWin(){
 }
 
 boolean checkTie(){
-  if (moveCounter == 9){
+  if (moveCounter == 9 && checkComputerWin() == false && checkPlayerWin() == false){
     println("Game over, it was a draw");
     return true;
 
   } else {
-    println("Game is still in progress");
+    // println("Game is still in progress");
     return false;
   }
 }

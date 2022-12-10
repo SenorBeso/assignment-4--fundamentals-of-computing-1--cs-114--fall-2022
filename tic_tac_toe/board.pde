@@ -3,8 +3,9 @@ boolean playerMove = false;
 boolean validMove = false;
 boolean gameOver = false;
 //----------------------------
+
 void computerMove(){
-  if (!playerMove) {
+  if (playerMove == false) {
     int move = int(random(8));
 
     while (board[move] != 0){
@@ -36,19 +37,21 @@ void keyPressed (){
   String input = "" + key;
   if (VALIDINPUT.indexOf(input) != -1) {
       int userMove = Integer.parseInt(input);
-      userMove(userMove);
+      if (checkComputerWin() == false && checkPlayerWin() == false){
+        userMove(userMove);
+      }
   } else {
       println("Invalid, enter another key");
     }
 
-    if (validMove) {
+    if (validMove == true) {
       validMove = false;
 
       if (moveCounter > 5) {
         checkPlayerWin();
       }
 
-      if (!gameOver) {
+      if (gameOver == false) {
         playerMove = false;
         computerMove();
       }
