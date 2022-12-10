@@ -6,7 +6,7 @@ final int SPOTHEIGHT = HEIGHT/3;
 final int COMPUTERMARKER = 1;
 final int PLAYERMARKER = 2;
 int moveCounter = 0;
-int[] board = new int[8];
+int[] board = new int[9];
 
 int[] xSpotsCircle = {
   ((SPOTWIDTH)/2),

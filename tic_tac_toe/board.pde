@@ -5,28 +5,42 @@ void computerMove(){
   move = int(random(8));
     drawX(move);
     board[move] = 1;
-    println("This is board at move" + move);
+    println("This is board at move " + board[move]);
     moveCounter++;
     checkComputerWin();
-    checkTie();
+    // checkTie();
 }
 
- void keyPressed(){
+//  void keyPressed(){
+//   if(checkTie() == false && checkPlayerWin() == false && checkComputerWin() == false){
+//         playerMove();
+//         checkPlayerWin();
+//         checkComputerWin();
+//         moveCounter++;
+//         checkTie();
+//     } else {
+//       println("Invalid move, input another move");
+//     }
+//       println ("Game is still going");
+//  }
 
-
-  if(checkTie() == false && checkPlayerWin() == false && checkComputerWin() == false){
-        playerMove();
-        checkPlayerWin();
-        checkComputerWin();
-        moveCounter++;
-        checkTie();
-    } else {
-      println("Invalid move, input another move");
+void playerMove(int input){
+    if (board[input] == 0){
+    drawCircle(input);
+  board[key] = 2;
+    moveCounter++;
     }
-      println ("Game is still going");
- }
+}
 
 
+// void playerMove(){
+//   if(key == 5){
+//     drawCircle(key);
+//     board[0]=2;
+//   } else if (board[0] != 0){
+//     println("Invalid move");
+//   }
+// }
 
   // int userInput = key;
   // playerMove(userInput);
@@ -45,20 +59,4 @@ void computerMove(){
   // }
 
 
-// void playerMove(int input){
-//     if (board[input] == 0){
-//     drawCircle(input);
-//   board[key] = 2;
-//     moveCounter++;
-//     }
-// }
-
-void playerMove(){
-  if(key == 5){
-    drawCircle(key);
-    board[0]=2;
-  } else if (board[0] != 0){
-    println("Invalid move");
-  }
-}
 

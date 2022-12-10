@@ -3,15 +3,14 @@ void setup() {
   drawBoard();
 
 
-    for (int i = 0; i < 10; i++){
+    // for (int i = 0; i < 10; i++){
       if (checkTie() == false && checkComputerWin() == false && checkPlayerWin() == false){
         computerMove();
       }
       if (checkTie() == false && checkComputerWin() == false && checkPlayerWin() == false){
-        println("TEST");
-        playerMove();
+        playerMove(8);
       }
-    }
+    // }
 
 
 }
