@@ -1,4 +1,5 @@
 void drawCircle(int input){
+  fill(127,127,127);
   circle(xSpotsCircle[input],ySpotsCircle[input],CIRCLERADIUS);
 }
 
