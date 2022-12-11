@@ -116,7 +116,7 @@ void keyPressed() {
       checkTie();
       playerMove = "no";
       validInputNum = false;
-      if (checkPlayerWin() != true){
+      if (checkPlayerWin() == false){
         computerMove();
         }
 

@@ -6,7 +6,6 @@ final int SPOTHEIGHT = HEIGHT/3;
 final int COMPUTERMARKER = 1;
 final int PLAYERMARKER = 2;
 int moveCounter = 0;
- String userInput = key + "";
 final String VALIDINPUTS = "8" + "7" + "6" + "5" + "4" + "3" + "2" + "1" + "0";
 int[] board = new int[9];
 
