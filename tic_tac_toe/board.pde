@@ -91,22 +91,53 @@ boolean checkTie(){
 
 void userMove(int input){
   if (board[input] == 0){
-    drawCircle(input);
     board[input] = 2;
     moveCounter++;
     validInputNum = true;
+    drawCircle(input);
+  } else {
+    println("Choose another spot, this one is taken");
   }
 }
 
-//Weird method that works everytime the key is pressed, instead of using a scanner (processing is bizarre)
-//This method calls upon the userMove method, and the key that is pressed is the parameter for that function
 void keyPressed() {
-  String userInput = key + "";
-  if (VALIDINPUTS.indexOf(userInput) >= 0) {
-      int userMove = Integer.parseInt(userInput);
-      if (checkComputerWin() == false && checkPlayerWin() == false){
-        userMove(userMove);
-      }
+  if (key == '0'){
+    int userMove = key;
+    if (checkComputerWin() == false && checkPlayerWin() == false && checkTie() == false){
+        userMove(0);
+    }
+  } else if (key == '1'){
+    if (checkComputerWin() == false && checkPlayerWin() == false && checkTie() == false){
+        userMove(1);
+    }
+  } else if (key == '2'){
+    if (checkComputerWin() == false && checkPlayerWin() == false && checkTie() == false){
+        userMove(2);
+    }
+  } else if (key == '3'){
+    if (checkComputerWin() == false && checkPlayerWin() == false && checkTie() == false){
+        userMove(3);
+    }
+  } else if (key == '4'){
+    if (checkComputerWin() == false && checkPlayerWin() == false && checkTie() == false){
+        userMove(4);
+    }
+  } else if (key == '5'){
+    if (checkComputerWin() == false && checkPlayerWin() == false && checkTie() == false){
+        userMove(5);
+    }
+  } else if (key == '6'){
+    if (checkComputerWin() == false && checkPlayerWin() == false && checkTie() == false){
+        userMove(6);
+    }
+  } else if (key == '7'){
+    if (checkComputerWin() == false && checkPlayerWin() == false && checkTie() == false){
+        userMove(7);
+    }
+  } else if (key == '8'){
+    if (checkComputerWin() == false && checkPlayerWin() == false && checkTie() == false){
+        userMove(8);
+    }
   } else {
       println("Only enter number keys 0-8");
     }
@@ -119,29 +150,21 @@ void keyPressed() {
       if (checkPlayerWin() == false){
         computerMove();
         }
-
     }
 }
 
 void computerMove(){
-  if (playerMove == "no") {
     int move = int(random(9));
     while (board[move] == 1 || board[move] == 2){
       move = int(random(9));
     }
       drawX(move);
       board[move] = 1;
-      playerMove = "yes";
       moveCounter++;
       checkTie();
       checkComputerWin();
+      playerMove = "yes";
       if (checkComputerWin() == false && checkPlayerWin () == false && checkTie() == false){
         println("The game is still in progress");
       }
-  }
 }
-
-
-
-
-
