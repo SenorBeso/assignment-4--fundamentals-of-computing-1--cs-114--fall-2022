@@ -166,11 +166,11 @@ void computerMove(){
     while (board[move] == 1 || board[move] == 2){
       move = int(random(9));
     }
-      drawX(move);
-      board[move] = 1;
-      movesCounter++;
-      playerMove = "yes";
-      if (checkComputerWin() == false && checkPlayerWin () == false && checkTie() == false){
-        println("The game is still in progress");
-      }
+    drawX(move);
+    board[move] = 1;
+    movesCounter++;
+    playerMove = "yes";
+    if (checkComputerWin() == false && checkPlayerWin () == false && checkTie() == false){
+      println("The game is still in progress");
+    }
 }
