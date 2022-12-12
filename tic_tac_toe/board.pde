@@ -80,7 +80,7 @@ boolean checkPlayerWin(){
 }
 
 boolean checkTie(){
-  if (moveCounter == 9 && checkComputerWin() == false && checkPlayerWin() == false){
+  if (movesCounter == 9 && checkComputerWin() == false && checkPlayerWin() == false){
     println("Game over, it was a draw");
     return true;
 
@@ -92,7 +92,7 @@ boolean checkTie(){
 void userMove(int input){
   if (board[input] == 0){
     board[input] = 2;
-    moveCounter++;
+    movesCounter++;
     validInputNum = true;
     drawCircle(input);
   } else {
@@ -159,7 +159,7 @@ void computerMove(){
     }
       drawX(move);
       board[move] = 1;
-      moveCounter++;
+      movesCounter++;
       playerMove = "yes";
       if (checkComputerWin() == false && checkPlayerWin () == false && checkTie() == false){
         println("The game is still in progress");
