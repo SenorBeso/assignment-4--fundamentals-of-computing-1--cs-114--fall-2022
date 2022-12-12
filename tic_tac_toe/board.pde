@@ -106,38 +106,47 @@ void keyPressed() {
     if (checkComputerWin() == false && checkPlayerWin() == false && checkTie() == false){
         userMove(0);
     }
+
   } else if (key == '1'){
     if (checkComputerWin() == false && checkPlayerWin() == false && checkTie() == false){
         userMove(1);
     }
+
   } else if (key == '2'){
     if (checkComputerWin() == false && checkPlayerWin() == false && checkTie() == false){
         userMove(2);
     }
+
   } else if (key == '3'){
     if (checkComputerWin() == false && checkPlayerWin() == false && checkTie() == false){
         userMove(3);
     }
+
   } else if (key == '4'){
     if (checkComputerWin() == false && checkPlayerWin() == false && checkTie() == false){
         userMove(4);
     }
+
   } else if (key == '5'){
     if (checkComputerWin() == false && checkPlayerWin() == false && checkTie() == false){
         userMove(5);
     }
+
   } else if (key == '6'){
     if (checkComputerWin() == false && checkPlayerWin() == false && checkTie() == false){
         userMove(6);
     }
+
   } else if (key == '7'){
     if (checkComputerWin() == false && checkPlayerWin() == false && checkTie() == false){
         userMove(7);
     }
+
   } else if (key == '8'){
     if (checkComputerWin() == false && checkPlayerWin() == false && checkTie() == false){
         userMove(8);
     }
+
   } else {
       println("Only enter number keys 0-8");
     }
