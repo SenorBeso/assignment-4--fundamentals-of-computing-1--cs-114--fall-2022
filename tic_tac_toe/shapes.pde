@@ -4,8 +4,8 @@ void drawCircle(int input){
 }
 
 void drawX (int input){
-line(xSpotsX[input], ySpotsX[input], xSpotsX[input]+SPOTWIDTH, ySpotsX[input]+SPOTHEIGHT);
-line(xSpotsX[input]+SPOTWIDTH, ySpotsX[input], xSpotsX[input], ySpotsX[input]+SPOTHEIGHT);
+  line(xSpotsX[input], ySpotsX[input], xSpotsX[input]+SPOTWIDTH, ySpotsX[input]+SPOTHEIGHT);
+  line(xSpotsX[input]+SPOTWIDTH, ySpotsX[input], xSpotsX[input], ySpotsX[input]+SPOTHEIGHT);
 }
 
 void drawBoard (){
