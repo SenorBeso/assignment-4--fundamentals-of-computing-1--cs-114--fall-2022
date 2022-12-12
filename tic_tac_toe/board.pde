@@ -102,7 +102,6 @@ void userMove(int input){
 
 void keyPressed() {
   if (key == '0'){
-    int userMove = key;
     if (checkComputerWin() == false && checkPlayerWin() == false && checkTie() == false){
         userMove(0);
     }
