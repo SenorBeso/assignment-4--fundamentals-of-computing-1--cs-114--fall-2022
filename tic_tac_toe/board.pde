@@ -7,7 +7,7 @@ boolean checkComputerWin(){
     println("The computer has won the game!");
     return true;
 
-  } else if (board[3] == 1 && board[4] == 2 && board[5] == 1){
+  } else if (board[3] == 1 && board[4] == 1 && board[5] == 1){
     println("The computer has won the game!");
     return true;
 
