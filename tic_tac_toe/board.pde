@@ -143,7 +143,7 @@ void keyPressed() {
     }
 
     if (validInputNum == true) {
-      checkPlayerWin();
+      // checkPlayerWin();
       checkTie();
       playerMove = "no";
       validInputNum = false;
@@ -162,7 +162,7 @@ void computerMove(){
       board[move] = 1;
       moveCounter++;
       checkTie();
-      checkComputerWin();
+      // checkComputerWin();
       playerMove = "yes";
       if (checkComputerWin() == false && checkPlayerWin () == false && checkTie() == false){
         println("The game is still in progress");
