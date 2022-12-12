@@ -143,7 +143,6 @@ void keyPressed() {
     }
 
     if (validInputNum == true) {
-      // checkPlayerWin();
       checkTie();
       playerMove = "no";
       validInputNum = false;
