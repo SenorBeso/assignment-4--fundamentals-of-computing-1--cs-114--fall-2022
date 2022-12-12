@@ -16,5 +16,4 @@ void drawBoard (){
 
   line(0,WIDTH*.33,HEIGHT,WIDTH*.33);
   line(0,(WIDTH*.33)*2,HEIGHT,(WIDTH*.33)*2);
-
 }
