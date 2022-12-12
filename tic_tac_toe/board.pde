@@ -161,8 +161,6 @@ void computerMove(){
       drawX(move);
       board[move] = 1;
       moveCounter++;
-      checkTie();
-      // checkComputerWin();
       playerMove = "yes";
       if (checkComputerWin() == false && checkPlayerWin () == false && checkTie() == false){
         println("The game is still in progress");
